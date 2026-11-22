@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PS 02 · Material Management — Apramey</title>
+<meta name="description" content="Develop a system for construction material procurement, QC, storage and accounts that is sustainable with minimum supervision from the project manager.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' fill='none' stroke='%2314212B' stroke-width='4'/%3E%3Crect x='9' y='9' width='14' height='14' fill='%23E0661A'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap"><a class="brand" href="../index.html"><span class="mark"></span><span data-fill="firstName">Apramey</span></a><button class="menu-btn" aria-label="Menu">Menu</button><nav class="nav"><a href="../index.html" class="">Home</a><a href="../index.html#about" class="">About</a><a href="../index.html#workshop" class="on">Workshop</a><a href="../index.html#gallery" class="">Gallery</a><a href="../index.html#contact" class="">Contact</a></nav></div></header>
+<main>
+
+<div class="wrap ps-head">
+  <div class="crumbs"><a href="../index.html#workshop">Construction Management Workshop</a> / Problem Statement 02</div>
+  <h1><small>Problem Statement 02</small>Material Management</h1>
+  <p class="theme"><b>Theme —</b> Develop a system for construction material procurement, QC, storage and accounts that is sustainable with minimum supervision from the project manager.</p>
+  <div class="titleblock"><div><label>Drg no.</label><span>PS-02</span></div><div><label>Project</label><span>Shopping mall</span></div><div><label>Lead time</label><span>15 days</span></div><div><label>Sheet</label><span>2 of 6</span></div><div><label>Status</label><span>Workshop solution</span></div></div>
+  <div class="toc"><a href="#brief">Brief</a><a href="#buy">Procurement</a><a href="#gate">Receiving</a><a href="#store">Storage</a><a href="#issue">Issue &amp; accounts</a><a href="#plans">Plans &amp; records</a><a href="#setup">15-day set-up</a><a href="#limits">Limitations</a><a href="#conclusion">Conclusion</a><a href="#meetings">Meetings</a></div>
+</div>
+<div class="wrap ps-body">
+<section id="brief" class="rv"><div class="sec-head"><span class="no">A</span><h2>The brief</h2></div>
+<p>A new store manager without large-project experience; the project starts in <b>15 days</b> <span class="pill g">given</span>. Set up procurement, QC, storage and accounts so the system runs with minimum day-to-day involvement from the
+project manager. The assignment requires: a store layout for consumables, non-consumables, equipment and safety gear; a decision on which gate is used for entry and exit; vehicle numbers recorded in and out;
+the driver's invoice split into three copies (security, store, accounts); QA/QC inspection with the store manager, close to the lab, with rejected material leaving at once; and accepted material going to its designated slot.</p>
+<div class="flow"><span>Need</span><i>→</i><span>Buy</span><i>→</i><span>Gate</span><i>→</i><span>Receive</span><i>→</i><span>QC hold</span><i>→</i><span>Store</span><i>→</i><span>Issue</span><i>→</i><span>Reconcile</span></div>
+<div class="callout"><b>Core rule:</b> no material enters usable stock until QA/QC has accepted it and a GRN has been raised for the accepted quantity.</div></section><section id="buy" class="rv"><div class="sec-head"><span class="no">B</span><h2>Need → Buy: planning and procurement controls</h2></div>
+<div class="grid g2">
+<div class="card blue"><h4>Item master and specifications</h4><ul class="tight"><li>One code per item: description, grade/specification, unit, approved brands, storage zone, reorder level</li><li>Specifications taken from the drawings, BOQ and approved submittals</li><li>Store cannot receive an item that is not in the item master</li></ul></div>
+<div class="card blue"><h4>Indent (material requisition)</h4><ul class="tight"><li>Raised by the site engineer for a work package, from the 3-week look-ahead</li><li>Checked against the BOQ / budget balance for that item</li><li>Approval limits: site engineer → project engineer → PM only above a set value</li></ul></div>
+<div class="card green"><h4>Vendors</h4><ul class="tight"><li>Prequalification: capacity, quality record, test certificates, credit terms</li><li>At least three comparative quotations for non-contract items</li><li>Rate contracts for repeat items (cement, steel, aggregates, blocks)</li></ul></div>
+<div class="card green"><h4>Purchase order must state</h4><ul class="tight"><li>Grade / specification and approved brand</li><li>Quantity, unit rate, taxes, delivery schedule and delivery point (Gate 2)</li><li>Test certificates required per lot</li><li>Rejection and return terms; payment terms</li></ul></div>
+</div></section><section id="gate" class="rv"><div class="sec-head"><span class="no">C</span><h2>Gate → Receive → QC: the receiving process</h2></div>
+<div class="tbl-wrap "><table><thead><tr><th class="">Step</th><th class="">Who</th><th class="">Record</th><th class="">Control</th></tr></thead><tbody><tr><td class="">Vehicle arrives at Gate 2</td><td class="">Security</td><td class="">Gate register: vehicle no., driver, PO no., invoice no., time IN; movement ID issued</td><td class="">Vehicle without a valid PO waits outside the work area</td></tr><tr><td class="">Invoice split</td><td class="">Security / store / accounts</td><td class="">Copy 1 stays with security, copy 2 to the store manager, copy 3 to accounts (as the assignment requires)</td><td class="">Accounts cannot pay without its copy</td></tr><tr><td class="">Quantity check</td><td class="">Store manager</td><td class="">Count, weighbridge slip or measurement; condition</td><td class="">Shortfall noted on delivery challan</td></tr><tr><td class="">Quality check</td><td class="">QA/QC inspector (not the store manager alone)</td><td class="">Test certificate check; site/lab tests where specified</td><td class="">Decision: ACCEPT / HOLD / REJECT</td></tr><tr><td class="">Rejected</td><td class="">QA/QC + store</td><td class="">Rejection note with reason, quantity, photos</td><td class="">Material leaves site at once; vehicle exits under the same movement ID</td></tr><tr><td class="">Accepted</td><td class="">Store manager</td><td class="">GRN for the accepted quantity only</td><td class="">Material moved to its designated slot</td></tr><tr><td class="">Vehicle exits</td><td class="">Security</td><td class="">Time OUT against the same movement ID</td><td class="">Every IN has an OUT</td></tr></tbody></table></div>
+<p class="note">Gate 2 (north, nearest the store and lab) is the logistics gate for IN and OUT. Gate 1 is kept for people and emergency access. If trucks cannot turn safely inside, use Gate 2 IN / Gate 1 OUT as a controlled loop.</p></section><section id="store" class="rv"><div class="sec-head"><span class="no">D</span><h2>Store: zones and material-specific storage</h2></div>
+<div class="grid g3">
+<div class="card blue"><h4>Store zones</h4><ul class="tight"><li>A · consumables (cement, admixtures, small items)</li><li>B · bulk (aggregates, steel, blocks)</li><li>C · tools and non-consumables</li><li>D · PPE issue point</li><li>E · receiving + QC hold</li><li>F · rejected / return — marked DO NOT USE</li></ul></div>
+<div style="grid-column:span 2"><div class="tbl-wrap "><table><thead><tr><th class="">Material</th><th class="">Storage instruction</th></tr></thead><tbody><tr><td class="">Cement</td><td class="">Dry, covered shed on a raised platform; away from walls; stacks by lot with date; first in, first out</td></tr><tr><td class="">Reinforcement</td><td class="">Segregated by diameter, grade and heat / lot; on raised supports; tagged; protected from mud, oil and uncontrolled corrosion</td></tr><tr><td class="">Aggregates and sand</td><td class="">Separate bins by size on hardstanding with drainage; no mixing of fractions; protected from contamination</td></tr><tr><td class="">Admixtures and chemicals</td><td class="">As per manufacturer; labelled with expiry date; locked area</td></tr><tr><td class="">Blocks and bricks</td><td class="">Stable stacks on level ground; handled to avoid breakage</td></tr><tr><td class="">Formwork and timber</td><td class="">Dry, flat and organised; graded by condition (see PS4)</td></tr><tr><td class="">Tools and PPE</td><td class="">Racks with issue register; PPE issued against worker ID</td></tr></tbody></table></div></div>
+</div></section><section id="issue" class="rv"><div class="sec-head"><span class="no">E</span><h2>Issue → Reconcile: stock and accounts</h2></div>
+<div class="grid g2">
+<div>
+<h4>Issue</h4>
+<ul class="tight"><li>Only against an approved material request for a work package</li><li>Record quantity, location (block / level / member), receiver and date</li><li>Returns of unused material recorded the same way</li></ul>
+<h4 style="margin-top:14px">Daily stock equation</h4>
+<div class="eq">Closing = Opening + Accepted receipts − Issues ± Approved adjustments</div>
+<p class="small">Weekly physical count of fast-moving items; monthly full count. Differences above a set limit go to the PM as an exception.</p>
+</div>
+<div>
+<h4>Three-way match before payment</h4>
+<div class="flow"><span>Purchase order</span><i>→</i><span>Accepted GRN</span><i>→</i><span>Supplier invoice</span></div>
+<p class="small">Accounts pays only when quantity, rate and specification agree across all three. The three <i>invoice copies</i> above are for routing; the three-way <i>match</i> uses three different documents.</p>
+<h4 style="margin-top:14px">Exception dashboard (what the PM sees)</h4>
+<ul class="tight"><li>Late deliveries against PO dates</li><li>Price variance against PO or rate contract</li><li>QC rejections and holds</li><li>Stock-out risk (below reorder level)</li><li>Slow-moving stock</li><li>Missing documents (no GRN, no invoice, no test certificate)</li><li>Consumption variance against BOQ / BBS</li></ul>
+</div></div></section><section id="plans" class="rv"><div class="sec-head"><span class="no">F</span><h2>Phased site plans and sample records</h2></div>
+<div class="grid g3">
+  <div><figure class="ph r34 contain" data-src="../images/ps2-phase-1.png" data-label="Phase 1 plan (Blocks 1, 3)"></figure><div class="cap">Phase 1 · Blocks 1 &amp; 3 (team drawing)</div></div>
+  <div><figure class="ph r34 contain" data-src="../images/ps2-phase-2.png" data-label="Phase 2 plan (Blocks 2, 5, 6)"></figure><div class="cap">Phase 2 · Blocks 2, 5 &amp; 6 (team drawing)</div></div>
+  <div><figure class="ph r34 contain" data-src="../images/ps2-phase-3.png" data-label="Phase 3 plan (Blocks 4, 7)"></figure><div class="cap">Phase 3 · Blocks 4 &amp; 7 (team drawing)</div></div>
+</div>
+<div class="grid g2" style="margin-top:18px">
+  <div><figure class="ph r43 contain" data-src="../images/ps2-ledger.jpg" data-label="Sample material-delivery ledger"></figure><div class="cap">Sample format / illustrative record · delivery ledger (not a project transaction)</div></div>
+  <div><figure class="ph r43 contain" data-src="../images/ps2-invoice.jpg" data-label="Sample steel tax invoice"></figure><div class="cap">Sample format / illustrative record · steel supply invoice (not a project transaction)</div></div>
+</div>
+<div style="margin-top:18px"><figure class="ph  contain" data-src="../images/ps2-weighment.jpg" data-label="Aggregate weighment &amp;amp; trip slip"></figure><div class="cap">Sample format / illustrative record · weighment and trip slip (not a project transaction)</div></div></section><section id="setup" class="rv"><div class="sec-head"><span class="no">G</span><h2>Proposed 15-day set-up</h2></div><div class="tbl-wrap "><table><thead><tr><th class="">Days</th><th class="">Stage</th><th class="">Work</th></tr></thead><tbody><tr><td class="">1–3</td><td class="">Design</td><td class="">Store zones, item master, roles and approval limits, gate rule, registers</td></tr><tr><td class="">4–6</td><td class="">Forms</td><td class="">Indent, PO, gate register, receiving, QC, GRN, stock, issue, return, rejection forms; invoice routing</td></tr><tr><td class="">7–9</td><td class="">Physical set-up</td><td class="">Label bays; mark receiving, QC hold, accepted and rejected zones; test truck routes</td></tr><tr><td class="">10–12</td><td class="">Accounts link</td><td class="">Three-way match, opening stock, reorder levels, exception dashboard; train store and security</td></tr><tr><td class="">13–15</td><td class="">Trial and close</td><td class="">Mock delivery, mock rejection and mock issue; fix gaps; sign off the SOP</td></tr></tbody></table></div></section><section id="limits" class="rv"><div class="sec-head"><span class="no"></span><h2>Data limitations &amp; assumptions</h2></div><div class="card orange"><ul class="tight"><li>Store and yard positions follow the team's phase plans; dimensions must be checked against the AutoCAD drawing.</li><li>Approval limits, reorder levels and count frequencies are proposed values for the team to agree.</li><li>Ledger, invoice and weighment images are sample formats, not records of this project.</li></ul></div></section><section id="conclusion" class="rv"><div class="sec-head"><span class="no"></span><h2>Conclusion</h2></div><div class="callout">The system makes routine work self-running: each step has an owner and a record, QA/QC decides acceptance, the GRN covers only accepted quantity, and accounts pays only on a three-way match of PO, GRN and invoice.
+Gate 2 handles all material traffic with every vehicle logged in and out. The project manager deals only with exceptions shown on the dashboard. The 15-day set-up is a proposed plan, ending with a trial run before the first real delivery.</div></section><section id="meetings" class="rv"><div class="sec-head"><span class="no">H</span><h2>Minutes of meeting (actual team meetings)</h2></div>
+<div class="split">
+  <div class="card"><h4>Minutes — Kick-off &amp; task allocation</h4><ul class="tight"><li>Reviewed PS2 and the 15-day deadline.</li><li>Agreed workstreams: store layout, gate control, invoices, QC, accounts, stock records.</li><li>Fixed the supplied site plan as the base; adjacent property and park excluded.</li></ul>
+  <p class="note">Attendees: Karthik, Major, Apramey, Vijayalaxmi · 4 Sep 2026</p></div>
+  <div><figure class="ph r43 " data-src="../images/ps2-meeting1.jpg" data-label="Meeting 1 photo"></figure>
+  <div class="cap">Team meeting (actual photo)</div>
+  <div class="card green" style="margin-top:12px"><h4>Outcome</h4><p>Responsibilities and required records identified.</p></div></div>
+</div><div style="height:22px"></div>
+<div class="split">
+  <div class="card"><h4>Minutes — System review &amp; finalisation</h4><ul class="tight"><li>Checked the workflow against every PS2 condition.</li><li>Reviewed the three phase plans and the shared-gate option.</li><li>Confirmed three-copy invoice routing and the hold / accept / reject process.</li></ul>
+  <p class="note">Attendees: Karthik, Major, Apramey, Vijayalaxmi</p></div>
+  <div><figure class="ph r43 " data-src="../images/ps2-meeting2.jpg" data-label="Meeting 2 photo"></figure>
+  <div class="cap">Team meeting (actual photo)</div>
+  <div class="card green" style="margin-top:12px"><h4>Outcome</h4><p>Workflow agreed in principle; final sign-off depends on site dimensions.</p></div></div>
+</div><p style="margin-top:14px"><a class="btn" data-file="../docs/ps2.pptx" href="#">Download the team deck</a></p></section>
+<div class="pager"><a href="ps1.html">← PS 01 · Site Layout & Approvals</a><a href="ps3.html">PS 03 · Survey & Benchmarks →</a></div>
+</div>
+</main>
+<footer><div class="wrap"><span><span data-fill="fullName">Apramey</span> · <span data-fill="program"></span></span>
+<span>© <span data-year></span> · Drawn on a 20 mm grid</span></div></footer>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
