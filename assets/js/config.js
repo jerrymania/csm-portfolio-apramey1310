@@ -13,6 +13,6 @@ window.SITE = {
   email:     "",            // e.g. "apramey@example.com"
   phone:     "",
   linkedin:  "",            // full URL
-  github:    "",            // full URL
+  github:    "https://github.com/jerrymania/CSM-portfolio-Apramey",
   resume:    ""             // e.g. "docs/Apramey_Resume.pdf"
 };
